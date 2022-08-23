@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* unvisited link */
+
+        a:link {
+            color: rgba(246, 36, 8, 0.929);
+            }
+
+        /* visited link */
+        a:visited {
+            color: rgb(193, 87, 148);
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: rgb(186, 78, 233);
+        }
+
+        /* selected link */
+        a:active {
+            color: rgb(0, 255, 13);
+        } 
+
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+        input[type=text]:enabled {
+            background: #ffff00;
+        }
+
+        input[type=text]:disabled {
+            background: #dddddd;
+        }
+        input:focus{
+            background-color: violet;
+        }
+        input:invalid {
+            border: 2px solid red;
+        }
+        input:required {
+            background-color: yellow;
+        }
+        input:valid {
+            background-color: yellow;
+        }
+        a:link {
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <p>Mouse over and click the link: <a href="https://www.google.com">Google.com</a></p>
+
+    <form action="">
+        <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+        <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+    </form>
+
+    <form action="">
+        First name: <input type="text" value="Mickey"><br>
+        Last name: <input type="text" value="Mouse"><br>
+        Country: <input type="text" disabled="disabled" value="Disneyland">
+      </form>
+
+      <input type="email" value="supportEmail">
+
+      <p>A required input element:<br><input required></p>
+
+      <input type="email" value="support@example.com">
+
+      <a href="http://www.wikipedia.org">Wikipedia</a>
+
+
+
+    
+</body>
+</html>
