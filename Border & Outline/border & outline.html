@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .border-outline{
+            border: 40px double rgb(189, 237, 17);
+            outline:40px inset rgb(16, 236, 167) ;
+            margin: 50px;
+            padding: 30px;
+        }
+        a{
+            border-left: 3px solid rgb(218, 32, 172);
+        }
+        a:hover{
+            /* border: 5px solid green; */
+            outline: 6px solid rgb(197, 86, 26);
+        }
+        .box{
+            display: inline-block;
+            /* height: 200px;
+            width: 300px;
+            border-top: 50px;
+            border-left: 0px;
+            border-right: 0px;
+            border-style: double;
+            border-bottom: 50px; */
+            border: 30px solid rgb(25, 210, 111);
+            /* border-radius: 20px; */
+            /* border-radius: 50%; */
+            border-radius: 10px 25px 35px 10px;
+        }
+        .box1{
+            width: 500px;
+            display: inline-block;
+            border: 20px solid rgb(215, 43, 215);
+            border-radius: 70px 3px 70px 1px;
+            transition: all 2.0s;
+            
+        }
+        .box1:hover{
+            border-radius: 4px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    before div
+    <div class="border-outline">
+        border-outline
+    </div>
+    after div
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <div class="box"></div>
+    <div class="box1"></div>
+    
+</body>
+</html>
