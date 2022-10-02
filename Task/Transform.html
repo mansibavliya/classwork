@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        body{
+            background-color:rgb(202, 142, 142);
+        }
+        .maincontainer{
+            width: 250px;
+            height: 320px;
+            margin: 10% 40%;
+    
+        }
+        .thecard{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+        .thecard:hover{
+            transform: rotateY(180deg);
+        }
+        .thefront{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #ffc728;
+            color: #333;
+            text-align: center;
+            font-family: 'zilla slab' sans-serif;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .theback{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #5fcf88;
+            color: #fff;
+            text-align: center;
+            font-family: 'zilla slab' sans-serif;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transform: rotateY(180deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="maincontainer col-md-3">
+        <div class="thecard col-md-3">
+            <div class="thefront">front of card</div>
+            <div class="theback">back of card</div>
+        </div>
+    </div>
+    
+</body>
+</html>
