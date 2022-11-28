@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #btn {
+          padding: 10px 8px;
+          color: green;
+          background-color: rgba(122, 122, 122, 0.322);
+          border-radius: 12px;
+        }
+    
+        .geeks {
+          font-size: 40px;
+          color: green;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          text-shadow: 2px 2px 4px #880a0a;
+          letter-spacing: 2px;
+        }
+      </style>
+       <!--  JQuery CDN  -->
+      <script src=
+  "https://code.jquery.com/jquery-3.6.0.min.js"
+              integrity=
+  "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+              crossorigin="anonymous">
+      </script>
+           
+      <!-- JQuery UI CDN -->
+     <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+     </script>
+         
+      <script>
+        $(document).ready(function () {
+          $("#btn").click(function () {
+            $("h2").addClass("geeks", 2000, myCallback);
+          });
+          function myCallback() {
+            setTimeout(function () {
+              $("h2").removeClass("geeks");
+            }, 3000);
+          }
+        });
+      </script>
+</head>
+<body>
+
+    <h3>What is jQuery? </h3>
+    <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+
+    <h3>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,
+        JQuery Animation?</h3>
+    <p>addClass() method: It is used to add specified classes to each of the targeted elements while animating all style changes.
+        removeClass() method: It is used to remove the classes from the element while animating all style changes.
+
+        <h2>Welcome to GeeksForGeeks.</h2>
+        <button id="btn">
+            Click to see the effect</button>
+    </p>
+
+    <h3>How to create slider with animation? </h3>
+
+    
+</body>
+</html>
